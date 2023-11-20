@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Examen1EvaPsp</string>
+    <string name="cars_activity_name">Lista de Coches</string>
+    <string name="car_activity_name">Coche</string>
+    <string name="create_reparation_button">Crear reparación</string>
+    <string name="create_car_button">Nuevo +</string>
+    <string name="carRegistration">Matrícula</string>
+    <string name="model">Modelo</string>
+    <string name="color">Color</string>
+</resources>
