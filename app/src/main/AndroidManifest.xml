@@ -18,7 +18,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".ui.cars.CarsActivity"
+            android:name=".ui.author.AuthorActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Examen1EvaPsp">
@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.car.CarActivity"
+            android:name=".ui.book.BookActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Examen1EvaPsp">

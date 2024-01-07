@@ -10,7 +10,7 @@ import com.example.examen1evapsp.databinding.ItemCarBinding
 
 class CarAdapter(
     private val onClickListener: (Car) -> Unit
-): ListAdapter<Car, CarAdapter.CarViewHolder>(CarDiffCallback()) {
+) : ListAdapter<Car, CarAdapter.CarViewHolder>(CarDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarViewHolder {
         val binding = ItemCarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -28,7 +28,9 @@ class CarAdapter(
     inner class CarViewHolder(private val binding: ItemCarBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(car: Car) {
-            // TODO pintar la matricula el modelo y el color en los textViews
+            binding.textViewTitle.text = car.carRegistration
+            binding.textViewSubtitle1.text = car.color
+            binding.textViewSubtitle2.text = car.model
         }
     }
 

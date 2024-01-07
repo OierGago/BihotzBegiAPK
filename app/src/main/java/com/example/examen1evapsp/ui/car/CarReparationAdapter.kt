@@ -28,6 +28,9 @@ class CarReparationAdapter(
     inner class ReparationViewHolder(private val binding: ItemCarBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(reparation: Reparation) {
+            binding.textViewTitle.text = reparation.reparationDate.toString();
+            binding.textViewSubtitle1.text = reparation.price.toString();
+            binding.textViewSubtitle2.text = reparation.idCar.toString();
             // TODO setear los valores de precio y fecha en el titulo y subtitulo respectivamente
         }
     }
