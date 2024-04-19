@@ -10,5 +10,16 @@
     <string name="authortitle">Author Page</string>
 
     <string name="booktitle">Book Page</string>
+    <string name="nombre">BIHOTZ BEGI</string>
+    <string name="login">LOGIN</string>
+    <string name="registro">REGISTRO</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="NOMBRE">NOMBRE</string>
+    <string name="APELLIDO">APELLIDO</string>
+    <string name="G_MAIL">G-MAIL</string>
+    <string name="TEL">TELEFONO</string>
+    <string name="DNI">DNI</string>
+    <string name="password2">PASSWORD 2</string>
 
 </resources>
