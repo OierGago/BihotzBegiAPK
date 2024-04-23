@@ -4,18 +4,30 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.examen1evapsp.data.entities.Video
 import com.example.examen1evapsp.databinding.ActivityEducationBinding
-import com.example.examen1evapsp.databinding.ActivityPublicosBinding
 import com.example.examen1evapsp.ui.groups.GroupsActivity
 import com.example.examen1evapsp.ui.myPlaning.MyPlaningActivity
 import com.example.examen1evapsp.ui.publicos.PublicosActivity
 
 class EducationActivity : ComponentActivity() {
+    private lateinit var videoAdapter: VideoAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityEducationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val listaVideos = listOf(
+            Video(1, "Video 1", "https://www.youtube.com/watch?v=video1"),
+            Video(2, "Video 2", "https://www.youtube.com/watch?v=video2"),
+            Video(3, "Video 3", "https://www.youtube.com/watch?v=video3")
+        )
 
+        // Configura el RecyclerView
+
+       binding.recyclerView3.layoutManager = LinearLayoutManager(this)
+        videoAdapter = VideoAdapter(listaVideos)
+       binding.recyclerView3.adapter = videoAdapter
         // TODO realizar toda la logica pendiente...
         binding.textView13.setOnClickListener(){
             Log.i("login-groups", "butonLoginsetonclik")

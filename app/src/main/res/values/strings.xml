@@ -21,5 +21,7 @@
     <string name="TEL">TELEFONO</string>
     <string name="DNI">DNI</string>
     <string name="password2">PASSWORD 2</string>
+    <string name="apuntarnota">Apuntar notas</string>
+    <string name="notas">NOTAS</string>
 
 </resources>

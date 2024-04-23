@@ -59,7 +59,19 @@
             android:name=".ui.myPlaning.MyPlaningActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Examen1EvaPsp">
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity
+            android:name=".ui.notas.NotasActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+        <activity
+            android:name=".ui.chat.ChatActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat">
         </activity>
     </application>
 

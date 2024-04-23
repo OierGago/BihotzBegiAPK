@@ -6,14 +6,14 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.examen1evapsp.data.entities.Reparation
-import com.example.examen1evapsp.databinding.ItemCarBinding
+import com.example.examen1evapsp.databinding.ItemGroupsBinding
 
 class CarReparationAdapter(
     private val onClickListener: (reparation: Reparation) -> Unit
 ): ListAdapter<Reparation, CarReparationAdapter.ReparationViewHolder>(ReparationDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ReparationViewHolder {
-        val binding = ItemCarBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemGroupsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ReparationViewHolder(binding)
     }
 
@@ -25,7 +25,7 @@ class CarReparationAdapter(
         }
     }
 
-    inner class ReparationViewHolder(private val binding: ItemCarBinding) :
+    inner class ReparationViewHolder(private val binding: ItemGroupsBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(reparation: Reparation) {
             binding.textViewTitle.text = reparation.reparationDate.toString();
