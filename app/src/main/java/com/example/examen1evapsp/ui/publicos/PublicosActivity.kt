@@ -12,6 +12,7 @@ import com.example.examen1evapsp.data.entities.Groups
 import com.example.examen1evapsp.data.entities.GrupoPublico
 import com.example.examen1evapsp.databinding.ActivityGroupsBinding
 import com.example.examen1evapsp.databinding.ActivityPublicosBinding
+import com.example.examen1evapsp.ui.chat.ChatActivity
 import com.example.examen1evapsp.ui.education.EducationActivity
 import com.example.examen1evapsp.ui.groups.GroupsActivity
 import com.example.examen1evapsp.ui.groups.GrupoAdapter
@@ -71,6 +72,14 @@ class PublicosActivity : ComponentActivity(){
             finish()
 
         }
+    }
+    infix fun changeToChat(group: Groups)  {
+        Log.i("login-groups", "butonLoginsetonclik")
+        val intent = Intent(this, ChatActivity::class.java).apply {
+            intent.putExtra("id",group.id.toString())
+            intent.putExtra("name", group.nombre)
+        }
+        startActivity(intent)
     }
 
 }

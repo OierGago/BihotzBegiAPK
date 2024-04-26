@@ -81,7 +81,6 @@ class GroupsActivity : ComponentActivity() {
             intent.putExtra("name", group.nombre)
         }
         startActivity(intent)
-        finish()
     }
 }
 

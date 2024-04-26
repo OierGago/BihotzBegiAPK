@@ -1,8 +1,5 @@
 package com.example.examen1evapsp.data.remote
 
-import com.example.examen1evapsp.data.entities.Author
-import com.example.examen1evapsp.data.entities.Book
-import com.example.examen1evapsp.data.entities.Car
 import com.example.examen1evapsp.data.entities.Reparation
 import retrofit2.Response
 import retrofit2.http.Body
@@ -13,7 +10,7 @@ import retrofit2.http.PUT
 import retrofit2.http.Path
 
 interface APIInterface {
-    @GET("/api/authors")
+  /*  @GET("/api/authors")
 suspend fun getAuthors(): Response<List<Author>>
 
     @GET("/books/author/{authorId}")
@@ -38,5 +35,5 @@ suspend fun getAuthors(): Response<List<Author>>
     suspend fun createReparationByCarId(@Body id: Int): Response<Reparation>
 
     @DELETE("/api/reparations/{id_reparacion}")
-    suspend fun deleteReparation(@Path("id_reparation")id: Int):Response<Int>
+    suspend fun deleteReparation(@Path("id_reparation")id: Int):Response<Int>*/
 }

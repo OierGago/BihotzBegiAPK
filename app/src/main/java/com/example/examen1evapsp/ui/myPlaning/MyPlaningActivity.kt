@@ -51,7 +51,6 @@ class MyPlaningActivity : ComponentActivity() {
 showDatePickerDialog()
            Toast.makeText(this, "Fecha seleccionada: $selectedDate", Toast.LENGTH_SHORT).show()
         }
-        // TODO realizar toda la logica pendiente...
         binding.textView13.setOnClickListener(){
             Log.i("login-groups", "butonLoginsetonclik")
             val intent = Intent(this, PublicosActivity::class.java).apply {
